@@ -8,20 +8,6 @@ const resturantSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        required: [true, 'Resturant description is required'],
-    }
-    address: {
-        type: String,
-        required: [true, 'Resturant address is required'],
-    },
-    phone: {
-        type: String,
-        required: [true, 'Resturant phone is required'],
-    },
-    email: {
-        type: String,
-        required: [true, 'Resturant email is required'],
-        unique: true,
     },
     image: {
         type: String,
@@ -30,7 +16,6 @@ const resturantSchema = new mongoose.Schema({
     food : {type: Array,},
     time : {
         type: String,
-        required: [true, 'Resturant time is required'],
     },
     pickup: {
         type: Boolean,
@@ -62,15 +47,15 @@ const resturantSchema = new mongoose.Schema({
         type: String,
     },
     coords: {
-        id: { type: String, }
+        id: { type: String, },
         latitude: { type: Number,},
-        latitudeDelta: { type: Number,}
-        longitude: { type: Number,}
-        longitudeDelta: { type: Number,}
-        address: { type: String, }
-        city: { type: String, }
-        state: { type: String, }
-        country: { type: String, }
+        latitudeDelta: { type: Number,},
+        longitude: { type: Number,},
+        longitudeDelta: { type: Number,},
+        address: { type: String, },
+        city: { type: String, },
+        state: { type: String, },
+        country: { type: String, },
         title: { type: String, }
         
     },
