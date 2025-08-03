@@ -47,3 +47,10 @@ This is a complete backend API for a Food Delivery App built using **Node.js**, 
 
 ## 📁 Project Structure
 
+├── controllers
+├── middlewares
+├── models
+├── routes
+├── utils
+└── index.js
+
